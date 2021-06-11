@@ -1,10 +1,10 @@
 function App() {
   return (
-    <div class="grid-container">
+    <div className="grid-container">
       {/* header section   */}
-      <header class="row">
+      <header className="row">
         <div>
-          <a class="brand" href="index.htnl">
+          <a className="brand" href="index.htnl">
             Amazona
           </a>
         </div>
@@ -15,192 +15,192 @@ function App() {
       </header>
       {/* main section  */}
       <main>
-        <div class="row center">
+        <div className="row center">
           {/* product item   */}
-          <div class="card">
+          <div className="card">
             <a href="product.html">
               {/* image size: 680px by 830px    */}
-              <img class="medium" src="./images/product-1.jpeg" alt="product" />
+              <img className="medium" src="./images/product-1.jpeg" alt="product" />
             </a>
             {/* card body   */}
-            <div class="card-body">
+            <div className="card-body">
               <a href="product.hrml">
                 <h2>Slim Shirts</h2>
               </a>
               {/* rating   */}
-              <div class="rating">
+              <div className="rating">
                 <span>
-                  <i class="fa fa-star"></i>
+                  <i className="fa fa-star"></i>
                 </span>
                 <span>
-                  <i class="fa fa-star"></i>
+                  <i className="fa fa-star"></i>
                 </span>
                 <span>
-                  <i class="fa fa-star"></i>
+                  <i className="fa fa-star"></i>
                 </span>
                 <span>
-                  <i class="fa fa-star"></i>
+                  <i className="fa fa-star"></i>
                 </span>
               </div>
               {/*price section   */}
-              <div class="price">$120</div>
+              <div className="price">$120</div>
             </div>
           </div>
           {/* product item  */}
-          <div class="card">
+          <div className="card">
             <a href="product.html">
               {/* image size: 680px by 830px   */}
-              <img class="medium" src="./images/product-1.jpeg" alt="product" />
+              <img className="medium" src="./images/product-1.jpeg" alt="product" />
             </a>
             {/* card body   */}
-            <div class="card-body">
+            <div className="card-body">
               <a href="product.hrml">
                 <h2>Slim Shirts</h2>
               </a>
               {/* rating   */}
-              <div class="rating">
+              <div className="rating">
                 <span>
-                  <i class="fa fa-star"></i>
+                  <i className="fa fa-star"></i>
                 </span>
                 <span>
-                  <i class="fa fa-star"></i>
+                  <i className="fa fa-star"></i>
                 </span>
                 <span>
-                  <i class="fa fa-star"></i>
+                  <i className="fa fa-star"></i>
                 </span>
                 <span>
-                  <i class="fa fa-star"></i>
+                  <i className="fa fa-star"></i>
                 </span>
               </div>
               {/* price section  */}
-              <div class="price">$120</div>
+              <div className="price">$120</div>
             </div>
           </div>
           {/* product item   */}
-          <div class="card">
+          <div className="card">
             <a href="product.html">
               {/* image size: 680px by 830px  */}
-              <img class="medium" src="./images/product-1.jpeg" alt="product" />
+              <img className="medium" src="./images/product-1.jpeg" alt="product" />
             </a>
             {/* card body   */}
-            <div class="card-body">
+            <div className="card-body">
               <a href="product.hrml">
                 <h2>Slim Shirts</h2>
               </a>
               {/* rating   */}
-              <div class="rating">
+              <div className="rating">
                 <span>
-                  <i class="fa fa-star"></i>
+                  <i className="fa fa-star"></i>
                 </span>
                 <span>
-                  <i class="fa fa-star"></i>
+                  <i className="fa fa-star"></i>
                 </span>
                 <span>
-                  <i class="fa fa-star"></i>
+                  <i className="fa fa-star"></i>
                 </span>
                 <span>
-                  <i class="fa fa-star"></i>
+                  <i className="fa fa-star"></i>
                 </span>
               </div>
               {/* price section   */}
-              <div class="price">$120</div>
+              <div className="price">$120</div>
             </div>
           </div>
           {/* product item   */}
-          <div class="card">
+          <div className="card">
             <a href="product.html">
               {/* image size: 680px by 830px   */}
-              <img class="medium" src="./images/product-1.jpeg" alt="product" />
+              <img className="medium" src="./images/product-1.jpeg" alt="product" />
             </a>
             {/* card body   */}
-            <div class="card-body">
+            <div className="card-body">
               <a href="product.hrml">
                 <h2>Slim Shirts</h2>
               </a>
               {/* rating  */}
-              <div class="rating">
+              <div className="rating">
                 <span>
-                  <i class="fa fa-star"></i>
+                  <i className="fa fa-star"></i>
                 </span>
                 <span>
-                  <i class="fa fa-star"></i>
+                  <i className="fa fa-star"></i>
                 </span>
                 <span>
-                  <i class="fa fa-star"></i>
+                  <i className="fa fa-star"></i>
                 </span>
                 <span>
-                  <i class="fa fa-star"></i>
+                  <i className="fa fa-star"></i>
                 </span>
               </div>
               {/* price section   */}
-              <div class="price">$120</div>
+              <div className="price">$120</div>
             </div>
           </div>
           {/* product item   */}
-          <div class="card">
+          <div className="card">
             <a href="product.html">
               {/* image size: 680px by 830px   */}
-              <img class="medium" src="./images/product-1.jpeg" alt="product" />
+              <img className="medium" src="./images/product-1.jpeg" alt="product" />
             </a>
             {/* card body   */}
-            <div class="card-body">
+            <div className="card-body">
               <a href="product.hrml">
                 <h2>Slim Shirts</h2>
               </a>
               {/* rating   */}
-              <div class="rating">
+              <div className="rating">
                 <span>
-                  <i class="fa fa-star"></i>
+                  <i className="fa fa-star"></i>
                 </span>
                 <span>
-                  <i class="fa fa-star"></i>
+                  <i className="fa fa-star"></i>
                 </span>
                 <span>
-                  <i class="fa fa-star"></i>
+                  <i className="fa fa-star"></i>
                 </span>
                 <span>
-                  <i class="fa fa-star"></i>
+                  <i className="fa fa-star"></i>
                 </span>
               </div>
               {/* price section   */}
-              <div class="price">$120</div>
+              <div className="price">$120</div>
             </div>
           </div>
           {/* product item   */}
-          <div class="card">
+          <div className="card">
             <a href="product.html">
               {/* image size: 680px by 830px   */}
-              <img class="medium" src="./images/product-1.jpeg" alt="product" />
+              <img className="medium" src="./images/product-1.jpeg" alt="product" />
             </a>
             {/* card body   */}
-            <div class="card-body">
+            <div className="card-body">
               <a href="product.hrml">
                 <h2>Slim Shirts</h2>
               </a>
               {/* rating   */}
-              <div class="rating">
+              <div className="rating">
                 <span>
-                  <i class="fa fa-star"></i>
+                  <i className="fa fa-star"></i>
                 </span>
                 <span>
-                  <i class="fa fa-star"></i>
+                  <i className="fa fa-star"></i>
                 </span>
                 <span>
-                  <i class="fa fa-star"></i>
+                  <i className="fa fa-star"></i>
                 </span>
                 <span>
-                  <i class="fa fa-star-half-o"></i>
+                  <i className="fa fa-star-half-o"></i>
                 </span>
               </div>
               {/* price section   */}
-              <div class="price">$120</div>
+              <div className="price">$120</div>
             </div>
           </div>
         </div>
       </main>
 
       {/* footer section  */}
-      <footer class="row center">All right reserverd</footer>
+      <footer className="row center">All right reserverd</footer>
     </div>
   );
 }
