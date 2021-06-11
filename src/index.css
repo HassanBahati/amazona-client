@@ -12,6 +12,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* for making root id full height */
+#root{
+  height: 100%;
+}
+
 /* layout */
 .grid-container {
   display: grid;
