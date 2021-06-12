@@ -1,5 +1,5 @@
 import React from "react";
-import {BrowserRouter, Route} from 'react-router-dom'
+import {BrowserRouter, Link, Route} from 'react-router-dom'
 import CartScreen from "./screens/CartScreen";
 import HomeScreen from "./screens/HomeScreen";
 import ProductScreen from "./screens/ProductScreen";
@@ -11,13 +11,13 @@ function App() {
       {/* header section   */}
       <header className="row">
         <div>
-          <a className="brand" href="/">
+          <Link className="brand" to="/">
             Amazona
-          </a>
+          </Link>
         </div>
         <div>
-          <a href="/cart">Cart</a>
-          <a href="/sign-in">Sign In</a>
+          <Link to="/cart">Cart</Link>
+          <Link to="/sign-in">Sign In</Link>
         </div>
       </header>
       {/* main section  */}

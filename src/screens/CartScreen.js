@@ -13,6 +13,7 @@ export default function CartScreen(props) {
       dispatch(addToCart(productId, qty));
     }
   }, [dispatch, productId, qty]);
+  
   return (
     <div>
       <h1> Cart screen</h1>
