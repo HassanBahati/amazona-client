@@ -1,5 +1,6 @@
-import React from 'react';
-import data from './data';
+import React from "react";
+import data from "./data";
+import Product from './components/Product'
 
 function App() {
   return (
@@ -20,9 +21,9 @@ function App() {
       <main>
         <div className="row center">
           {data.products.map((product) => (
-          <Product key={product._id} product={product}/>
+            <Product key={product._id} product={product}></Product>
           ))}
-        </div>
+        </div> 
       </main>
 
       {/* footer section  */}
