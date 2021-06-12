@@ -1,7 +1,8 @@
 import React from "react";
+import Rating from "./Rating";
 
 function Product(props) {
-    const {product} = props;
+  const { product } = props;
   return (
     <div>
       <div key={product._id} className="card">
@@ -14,7 +15,9 @@ function Product(props) {
           <a href={`/product/${product._id}`}>
             <h2>{product.name}</h2>
           </a>
-       </div>
+          <Rating rating={product._id} numReviews={product.numReviews}></Rating>
+          <div className="price">${product.price}</div>
+        </div>
       </div>
     </div>
   );
