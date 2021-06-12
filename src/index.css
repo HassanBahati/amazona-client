@@ -82,6 +82,11 @@ a.brand{
     align-items: center;
 }
 
+/* putting items on prod details to top  */
+.row.top{
+  align-items: flex-start;
+}
+
 /* footer  */
 .row.center{
     justify-content: center;
