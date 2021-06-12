@@ -63,6 +63,35 @@ a{
 a:hover{
     color: #ff8000;
 }
+ul{
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+li{
+  /* vertical spcae btn items  */
+  margin-top: 1rem;
+}
+button{
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 0.1rem #a4a4a4 solid;
+  font-size: 1.6rem;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f8f8f8;
+  cursor: pointer;
+}
+button:hover{
+  border: 0.1rem #404040 solid;
+}
+button.primary{
+  background-color: #f0c040;
+}
+button.block{
+  width: 100%;
+}
 /* for links in header  */
 header a{
     color: #fff;
@@ -87,6 +116,16 @@ a.brand{
   align-items: flex-start;
 }
 
+.col-1{ 
+  /*1-occupy 1 of 4, 1-make it shrinkable, 25rem-set width */
+  flex: 1 1 25rem;
+}
+
+.col-2{ 
+  /*1-occupy 1 of 4, 1-make it shrinkable, 25rem-set width */
+  flex: 2 1 50rem;
+}
+
 /* footer  */
 .row.center{
     justify-content: center;
@@ -98,6 +137,9 @@ img{
 }
 img.medium{
   max-width: 29rem;
+  width: 100%;
+}
+img.large{
   width: 100%;
 }
 
@@ -127,3 +169,12 @@ img.medium{
 .rating span:last-child{
   color: #404040;
 }
+
+/* alert  */
+.success{
+color: #20a020;
+}
+
+.error{
+  color: #a02020;
+  }
