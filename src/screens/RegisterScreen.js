@@ -9,24 +9,29 @@ export default function RegisterScreen(props) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
 
   const redirect = props.location.search
     ? props.location.search.split("=")[1]
     : "/";
   const userRegister = useSelector((state) => state.userRegister);
-  const { userInfo, loading, error } = userRegister
+  const { userInfo, loading, error } = userRegister;
 
   const dispatch = useDispatch();
 
   const submitHandler = (e) => {
     e.preventDefault();
-    dispatch(register(name, email, password));
+    if (password !== confirmPassword) {
+      alert("Password and confirm pasword do not match");
+    } else {
+      dispatch(register(name, email, password));
+    }
   };
   useEffect(() => {
     if (userInfo) {
       props.history.push(redirect);
     }
-  },[props.history,redirect,userInfo]);
+  }, [props.history, redirect, userInfo]);
   return (
     <div>
       <form className="form" onSubmit={submitHandler}>
@@ -34,7 +39,7 @@ export default function RegisterScreen(props) {
           <h1>Register</h1>
         </div>
         {loading && <LoadingBox></LoadingBox>}
-        {error  && <MessageBox variant='danger'>{error }</MessageBox>}
+        {error && <MessageBox variant="danger">{error}</MessageBox>}
         <div>
           <label htmlFor="email">Name</label>
           <input
@@ -66,6 +71,16 @@ export default function RegisterScreen(props) {
           ></input>
         </div>
         <div>
+          <label htmlFor="confirmPassword">Confirm Password</label>
+          <input
+            type="password"
+            id="confirmpassword"
+            placeholder="Enter confirm password"
+            required
+            onChange={(e) => setConfirmPassword(e.target.value)}
+          ></input>
+        </div>
+        <div>
           <label></label>
           <button className="primary" type="submit">
             Register
@@ -74,7 +89,7 @@ export default function RegisterScreen(props) {
         <div>
           <label>
             <div>
-             Already have an account? <Link to="/signin">Sign In</Link>
+              Already have an account? <Link to="/signin">Sign In</Link>
             </div>
           </label>
         </div>
