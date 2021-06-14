@@ -86,7 +86,7 @@ button {
   background-color: #f8f8f8;
   cursor: pointer;
 }
-button{
+button {
   background-color: #f8f8f8;
   cursor: pointer;
 }
@@ -99,7 +99,7 @@ button:hover {
 button.primary {
   background-color: #f0c040;
 }
-button.block { 
+button.block {
   width: 100%;
 }
 /* for links in header  */
@@ -112,7 +112,7 @@ a.brand {
   font-size: 3rem;
   font-weight: bold;
 }
-.badge{
+.badge {
   background-color: #f02020;
   color: #ffffff;
   border-radius: 50%;
@@ -142,7 +142,7 @@ a.brand {
   /*1-occupy 1 of 4, 1-make it shrinkable, 25rem-set width */
   flex: 2 1 50rem;
 }
-.min-30{
+.min-30 {
   min-width: 30rem;
 }
 /* footer  */
@@ -154,7 +154,7 @@ a.brand {
 img {
   border-radius: 0.5rem;
 }
-img.small{
+img.small {
   max-width: 5rem;
   width: 100%;
 }
@@ -194,6 +194,9 @@ img.large {
 }
 
 /* alert  */
+.loading {
+  display: block !important;
+}
 .success {
   color: #20a020;
 }
@@ -216,7 +219,7 @@ img.large {
 }
 
 /* form  */
-.form{
+.form {
   max-width: 60rem;
   margin: 0 auto;
 }
@@ -227,18 +230,18 @@ img.large {
   margin: 1rem;
 }
 
-.form-label{
+.form-label {
   margin: 1rem 0;
   display: block;
 }
 
 /* Dropdown  */
-.dropdown{
+.dropdown {
   display: inline-block;
   position: relative;
 }
 
-.dropdown-content{
+.dropdown-content {
   position: absolute;
   display: none;
   right: 0;
@@ -250,6 +253,6 @@ img.large {
   margin-top: 0.4rem;
   border-radius: 0.5rem;
 }
-.dropdown:hover .dropdown-content{
-display: block;
+.dropdown:hover .dropdown-content {
+  display: block;
 }
