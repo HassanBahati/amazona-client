@@ -8,7 +8,12 @@ import SigninScreen from "./screens/SigninScreen";
 
 function App() {
   const cart = useSelector((state) => state.cart);
-  const {cartItems }  = cart;
+  const { cartItems } = cart;
+  const userSignin = useSelector((state) => state.userSignin);
+  const { userInfo } = userSignin;
+  const signoutHandler = () =>{
+    
+  }
   return (
     <BrowserRouter>
       <div className="grid-container">
@@ -19,20 +24,32 @@ function App() {
               Amazona
             </Link>
           </div>
-          <div> 
-            <Link to="/cart">Cart
-            {cartItems.length > 0 && (
-              <span className='badge'>{cartItems.length}</span>
-            )}
+          <div>
+            <Link to="/cart">
+              Cart
+              {cartItems.length > 0 && (
+                <span className="badge">{cartItems.length}</span>
+              )}
             </Link>
-            <Link to="/sign-in">Sign In</Link>
+            {userInfo ? (
+              <div className="dropdown">
+                <Link to="#">
+                  {userInfo.name} <i className="fa fa-caret-down"></i>
+                </Link>
+                <ul className='dropdown-content'> 
+                  <Link to= '#signout' onClick={signoutHandler}/>
+                </ul>
+              </div>
+            ) : (
+              <Link to="/sign-in">Sign In</Link>
+            )}
           </div>
         </header>
         {/* main section  */}
         <main>
           <Route path="/cart/:id?" component={CartScreen}></Route>
           <Route path="/product/:id" component={ProductScreen}></Route>
-          <Route path='/signin' component={SigninScreen}></Route>
+          <Route path="/signin" component={SigninScreen}></Route>
           <Route path="/" component={HomeScreen} exact></Route>
         </main>
 
